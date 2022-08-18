@@ -27,7 +27,7 @@ public class BinarySearchDriver {
         System.out.print("For which number should I search? (Type -1 to stop program) ");
         searchNumber = computerKeyboardInput.nextInt();
         // int[] array = new int[]{-7, 3, 5, 8, 12, 16, 23, 33, 55};
-        //System.out.print(array);
+        System.out.println(searchNumber);
         //System.out.println(BinarySearch.binarySearch(array, 0, (array.length - 1), 23));
         //System.out.println(BinarySearch.binarySearch(array, 0, (array.length - 1), 4));
     }
