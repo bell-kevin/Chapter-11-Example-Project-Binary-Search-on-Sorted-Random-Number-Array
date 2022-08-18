@@ -35,10 +35,7 @@ public class BinarySearchDriver {
             break;
         }
         //binarysearchdriver.BinarySearch.binarySearch(randomNumbers, 0, (arraySize-1), searchNumber);
-        BinarySearch.binarySearch(randomNumbers, 0, (randomNumbers.length - 1), searchNumber);
-        if ( = -1){
-            break;
-        }
+        System.out.println(BinarySearch.binarySearch(randomNumbers, 0, (randomNumbers.length - 1), searchNumber));
         } /* end do */ while (searchNumber != -1);
     } // end main
 } // end BinarySearchDriver class
