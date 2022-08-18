@@ -1,9 +1,7 @@
 //This drives the binarySearch class.
 package binarysearchdriver;
 
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class BinarySearchDriver {
 
@@ -13,22 +11,34 @@ public class BinarySearchDriver {
         int arraySize, searchNumber;
         System.out.print("How big is this array? ");
         arraySize = computerKeyboardInput.nextInt();
-        int random = (int) (Math.random() * arraySize * 5 + 1);
         System.out.println("Unsorted array: ");
-        ArrayList<Integer> randomNumbers = new ArrayList<>();
-        for (int i=0; i< arraySize; i++) {
-            randomNumbers.add(random);
-            random = (int) (Math.random() * arraySize * 5 + 1);
-        }  
-        System.out.println("Array contains: "+randomNumbers);
+        int[] randomNumbers = new int[arraySize];
+        System.out.print("Array contains: ");
+        for (int i=0; i<arraySize; i++){
+            int randomNumber = (int) (Math.random() * arraySize * 5 + 1);
+            randomNumbers[i] = randomNumber;
+            System.out.print(randomNumbers[i]+" ");
+        } //end for loop 
+        System.out.println();
         System.out.println("Sorted array: ");
-        Collections.sort(randomNumbers);
-        System.out.println("Array contains: "+randomNumbers);
-        System.out.print("For which number should I search? (Type -1 to stop program) ");
+        System.out.print("Array contains: ");
+        Arrays.sort(randomNumbers);
+        for (int i=0; i<arraySize; i++){
+            System.out.print(randomNumbers[i]+" ");
+        } // end for loop
+        System.out.println();
+        do {
+        System.out.print("For which number should I search? (Type -1 to end program) ");
         searchNumber = computerKeyboardInput.nextInt();
-        // int[] array = new int[]{-7, 3, 5, 8, 12, 16, 23, 33, 55};
-        System.out.println(searchNumber);
-        //System.out.println(BinarySearch.binarySearch(array, 0, (array.length - 1), 23));
-        //System.out.println(BinarySearch.binarySearch(array, 0, (array.length - 1), 4));
-    }
-}
+        if (searchNumber == -1){
+            System.out.println("Good bye");
+            break;
+        }
+        //binarysearchdriver.BinarySearch.binarySearch(randomNumbers, 0, (arraySize-1), searchNumber);
+        BinarySearch.binarySearch(randomNumbers, 0, (randomNumbers.length - 1), searchNumber);
+        if ( = -1){
+            break;
+        }
+        } /* end do */ while (searchNumber != -1);
+    } // end main
+} // end BinarySearchDriver class
