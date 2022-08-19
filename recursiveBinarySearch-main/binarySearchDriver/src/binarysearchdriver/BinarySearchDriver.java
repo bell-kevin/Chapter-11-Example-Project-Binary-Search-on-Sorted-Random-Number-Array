@@ -33,11 +33,11 @@ public class BinarySearchDriver {
             int indexPosition = BinarySearch.binarySearch(randomNumbers, 0, (randomNumbers.length - 1), searchNumber);
             if (indexPosition != -1) {
                 System.out.println("it was found in position " + indexPosition);
-            }
+            } // end if
             if (indexPosition == -1) {
                 System.out.println("that number was not found");
-            }
-        }
+            } // end if
+        } // end while loop
         System.out.println("Good bye");
     } // end main
 } // end BinarySearchDriver class
