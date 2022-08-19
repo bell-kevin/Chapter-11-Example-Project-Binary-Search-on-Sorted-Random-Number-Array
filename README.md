@@ -1,5 +1,5 @@
 # Chapter-11-Example-Project-Binary-Search-on-Sorted-Random-Number-Array
-In this project, create a sorted integer array and implement a binary search to find a specific element and report its position. Ask the user how large the array is, fill it with random numbers, display it, sort it, and display it again. In a loop, ask the user which number to find, search for it, and report the position where it was found. The user will enter a sentinel value to stop the loop, and the program will respond with a goodbye message.
+In this project, create a sorted integer array and implement a binary search to find a specific element and report its position. Ask the user how large the array is, fill it with random numbers, display it, sort it, and display it again. In a loop, ask the user which number to find, search for it, and report the position where it was found. The user will enter a sentinel value to stop the loop, and the program will respond with a goodbye message
 
 You will include unit testing in this project, for the binary search. After writing that code, test it with a fixed array, so it has predictable results. 
 
