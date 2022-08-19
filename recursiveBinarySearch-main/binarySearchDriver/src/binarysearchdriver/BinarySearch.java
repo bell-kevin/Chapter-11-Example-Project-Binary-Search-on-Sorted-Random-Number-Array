@@ -7,22 +7,18 @@ public class BinarySearch {
         int index;
         if (arr[first] == target) {         // base case
             index = first;
-            System.out.print("it was found in position ");
         } else if (arr[last] == target) {   // base case
             index = last;
-            System.out.print("it was found in position ");
         } else if (first == last) {         // base case
             if (arr[first] == target) {
                 index = first;
             } else {
-                System.out.print("it was not found ");
                 index = -1;
             }
         } else {                            // continue recursion
             mid = (last + first) / 2;
             if (target == arr[mid]) {       // base case
                 index = mid;
-                System.out.print("it was found in position ");
             } else {
                 if (target > arr[mid]) {
                     first = mid + 1;
