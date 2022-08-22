@@ -33,7 +33,7 @@ Note: You need to submit the whole project for these assignments. In File Explor
 
 ![binarySearchRecursive](https://github.com/bell-kevin/Chapter-11-Example-Project-Binary-Search-on-Sorted-Random-Number-Array/blob/main/Capture3.PNG)
 
-
+![unitTestingPassed](https://github.com/bell-kevin/Chapter-11-Example-Project-Binary-Search-on-Sorted-Random-Number-Array/blob/main/unitTestPassed.PNG)
 == We're Using GitHub Under Protest ==
 
 This project is currently hosted on GitHub.  This is not ideal; GitHub is a
