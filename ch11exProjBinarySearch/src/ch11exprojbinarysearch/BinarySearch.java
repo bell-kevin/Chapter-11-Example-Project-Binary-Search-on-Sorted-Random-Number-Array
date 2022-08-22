@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ch11exprojbinarysearch;
 
-/**
- *
- * @author 4800590195
- */
 class BinarySearch {
     public static int binarySearch(int[] arr, int first, int last, int target) {
         int mid;
