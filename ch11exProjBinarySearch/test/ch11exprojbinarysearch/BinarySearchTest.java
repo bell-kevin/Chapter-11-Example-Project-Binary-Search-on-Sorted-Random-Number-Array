@@ -33,9 +33,9 @@ public class BinarySearchTest {
         int[] randomNumbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int valueToFind = 11;
         int startingPositionOfArray = 0;
-        int expReturnPosition = 0;
+        int expReturnPosition = -1;
         int result = BinarySearch.binarySearch(randomNumbers, startingPositionOfArray, randomNumbers.length - 1, valueToFind);
-        assertNotEquals(expReturnPosition, result);
+        assertEquals(expReturnPosition, result);
     }// end test
 
     @Test
